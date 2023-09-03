@@ -1,0 +1,31 @@
+
+<div *ngFor="let emp of employees;let i=index;">
+    Name={{emp.name}} Gender={{emp.gender}} Age={{emp.age}}
+
+</div>
+<br/>
+<br/>
+
+<ng-template ngFor let-emp [ngForOf]="employees" let-i ="index">
+    Index={{i}} Name={{emp.name}} Gender={{emp.gender}} Age={{emp.age}}
+
+</ng-template>
+
+
+
+<!-- <div *ngIf="myVar; else elseBlock">
+    Divya
+</div>
+
+<ng-template #elseBlock>
+    Swarnakr
+</ng-template>  -->
+
+<!-- <div *ngIf="myVar">
+    Divya
+</div>
+    
+
+<ng-template [ngIf]="myVar">
+Learning Never Ends
+</ng-template> -->
